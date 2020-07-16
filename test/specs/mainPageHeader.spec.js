@@ -1,9 +1,11 @@
-import manePage from "../../pages/mainPage";
-import mainPageHeader from "../../pages/mainPageHeader";
+
+import mainPageHeader from "../../pages/Header";
+const input = require('../../data/input.json')
+const expected = require('../../data/expected/expected.json')
 
 describe ('MAIN PAGE ELEMENTS ARE EXISTING',()=> {
     before('Before',()=>{
-        mainPageHeader.openUrl('/')
+        mainPageHeader.open();
     })
 
     xit('amazon logo is displayed ', function () {
@@ -36,5 +38,7 @@ describe ('MAIN PAGE ELEMENTS ARE EXISTING',()=> {
         expect(mainPageHeader.elemIsDisplayed(mainPageHeader.languageButton)).true
 
     });
+
+
 
 })

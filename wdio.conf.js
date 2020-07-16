@@ -20,8 +20,10 @@ exports.config = {
   // directory is where your package.json resides, so `wdio` will be called from there.
   //
   specs: [
-      './test/specs/mainPageHeader.js'
-],
+    //  './test/specs/mainPageHeader.spec.js'
+      './test/specs/*.spec.js'
+
+  ],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -93,8 +95,8 @@ exports.config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: 'https://www.amazon.com/'
-,
+  baseUrl: 'https://www.amazon.com/',
+
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,

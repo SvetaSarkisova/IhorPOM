@@ -1,6 +1,6 @@
-export default class basePage {
+export default class BasePage {
 
-    openUrl(url){
+    open(url){
         browser.url(url)
     }
 
